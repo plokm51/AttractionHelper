@@ -37,6 +37,11 @@
     <div id="attractions">
       <div class="popular">
         <p class="title">熱門選擇</p>
+        <ul>
+          <li>
+            <SearchResultBar></SearchResultBar>
+          </li>
+        </ul>
       </div>
       <div class="secret">
         <p class="title">私房小眾</p>
@@ -51,12 +56,12 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import SearchResultBar from './components/SearchResultBar.vue'
 
 export default {
   name: 'App',
   components: {
-    
+    SearchResultBar,
   }
 }
 </script>
@@ -106,13 +111,13 @@ body {
   /*border: solid 1px black;*/
   border-right: solid 2px #93827F;
   height: 300px;
-  width: 49.5%;
+  width: 49%;
   height: 500px;
 }
 .secret{
   /*border: solid 1px yellow;*/
   height: 300px;
-  width: 50.5%;
+  width: 51%;
   height: 500px;
 }
 .title{
