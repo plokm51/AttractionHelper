@@ -1,6 +1,7 @@
 <template>
   <div>
     <div id="navbar">
+
       <div class="travel_condition">
         <p class="input_describtion">遊玩類型</p>
         <select v-model="cellphone">
@@ -37,6 +38,13 @@
     <div id="attractions">
       <div class="popular">
         <p class="title">熱門選擇</p>
+        <div>
+        <div class="menu"></div>
+        </div>
+        <div class="love"></div>
+        <!--<button type="button">button</button>-->
+       <!--<frameset cols=120,* frameborder="0" framespacing="0" border="0">
+        </frameset>-->
       </div>
       <div class="secret">
         <p class="title">私房小眾</p>
@@ -120,5 +128,17 @@ body {
   margin-left: 15px;
 
 }
+.menu {
+     height: 10vh;
+     width: 700px;
+     background-color: #30FFFF;
+     float: left;
+ }
+ .love{
+      height:10vh;
+      width: 200px;
+      background-color: #5134d4;
+      float: right;
+ }
 
 </style>
